@@ -1,21 +1,3 @@
-<?php
-
-  session_start();
-  if (isset($_SESSION['usuario'])) {
-    header("location: /ProyectoParkea-Apache/application/views/usuario.php");
-
-  }else if(isset($_SESSION['admin'])){
-    header("location: /ProyectoParkea-Apache/application/views/admin.php");
-
-  }else if(isset($_SESSION['empleado'])){
-    header("location: /ProyectoParkea-Apache/application/views/empleado.php");
-    
-  }else if(isset($_SESSION['pass'])){
-    header("location: /ProyectoParkea-Apache/application/views/cambiar_pass.php");
-    
-  }
-
-?>
 
 <!DOCTYPE html>
 <html>
