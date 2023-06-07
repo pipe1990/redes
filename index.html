@@ -1,64 +1,140 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Inicio de sesión</title>
-  <div>
-    <img src="images\parkea.png">
-  </div>
-  <img src="images\user.png" class="image-user">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Hoja de Vida</title>
+  <style>
+    /* Estilos CSS */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      min-height: 100%;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333333;
+    }
+
+    h2 {
+      color: #333333;
+      margin-top: 30px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
-<style>
-    .bienvenido {
-    position: absolute;
-      top: 0%;
-      left: 3.5%;
-    width: 15vw;
-    height: auto;
-  }
-</style>
-<img src="images\bienvenido.png" class="bienvenido">
-<img src="images\logo.png" class="image-logo">
+<body>
+  <div class="container">
+    <h1>Mi Hoja de Vida</h1>
+    
+    <div class="section animated" style="animation-delay: 0s; animation-name: fadeIn;">
+      <h2>Información personal</h2>
+      <p>Nombre: <strong>Andres Felipe Carbonell Amaya</strong></p>
+      <p>Edad: <strong>21 años </strong></p>
+      <p>Correo electrónico: <strong>acarbonell@unbosque.edu.co</strong></p>
+    </div>
+    
+    <div class="section animated" style="animation-delay: 0.5s; animation-name: fadeIn;">
+      <h2>Educación</h2>
+      <p>Título universitario: <strong>Actualmente cursando la carrera de ingeniería de sistemas.</strong></p>
+      <p>Institución: <strong>Universidad El Bosque</strong></p>
+      <p>Año de inicio: <strong>2020-2</strong></p>
+    </div>
+    
+    <div class="section animated" style="animation-delay: 1s; animation-name: fadeIn;">
+      <h2>Experiencia laboral</h2>
+      <p>Empresa: <strong>Savax</strong></p>
+      <p>Puesto: <strong>Desarrollador de Software</strong></p>
+      <p>Descripción: <strong>Como estudiante de Ingeniería de Sistemas, he asumido con entusiasmo una serie de responsabilidades y he logrado alcanzar destacados resultados en mi trayectoria académica. Mi principal responsabilidad ha sido adquirir y aplicar de manera efectiva los conocimientos teóricos y prácticos relacionados con el campo de la ingeniería de sistemas. Además, he asumido un papel activo en proyectos grupales, colaborando con mis compañeros para analizar, diseñar y desarrollar soluciones innovadoras utilizando las últimas tecnologías. Como resultado de mi dedicación y perseverancia, he logrado mantener un promedio académico sobresaliente, así como recibir reconocimientos y becas por mi rendimiento destacado. También he participado en competiciones y hackathons, donde he demostrado mis habilidades para resolver problemas complejos y presentar soluciones creativas. </strong></p>
+    </div>
+    
+    <div class="section animated" style="animation-delay: 1.5s; animation-name: fadeIn;">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+      </ul>
+    </div>
+    
+    <div class="section animated" style="animation-delay: 2s; animation-name: fadeIn;">
+      <h2>Proyectos</h2>
+      <ul>
+        <li>Proyecto Parkea/li>
+        <li>Cuatriqui</li>
+        <li>Bostinder</li>
+      </ul>
+    </div>
+    
+    <div class="section animated" style="animation-delay: 2.5s; animation-name: fadeIn;">
+      <h2>Idiomas</h2>
+      <p>Español: <strong>Fluido</strong></p>
+      <p>Inglés: <strong>Avanzado</strong></p>
+    </div>
+  </div>
 
-<body class="login-title">
-            <h1 class="title">Iniciar Sesión</h1>
+  <script>
+    // JavaScript para agregar movimientos dinámicos
+    const sections = document.querySelectorAll('.section');
+    sections.forEach((section, index) => {
+      section.addEventListener('mouseenter', () => {
+        section.style.backgroundColor = getRandomColor();
+      });
+      section.addEventListener('mouseleave', () => {
+        section.style.backgroundColor = '';
+      });
+    });
 
-            <form action="/ProyectoParkea-Apache/application/controllers/login_usuario.php" method="POST">
-                <div>
-                <input type="text" name="email" required placeholder="Correo">
-                </div>
-                <div>
-                <label for=""><br></label>
-                </div>
-                <div>
-                <input type="password" name="password" required placeholder="Contraseña">
-                </div>
-                <div>
-                <label for=""><br></label>
-                </div>   
-                <style>
-                    .text-xs-center {
-                        text-align: center;
-                    }
-
-                    .g-recaptcha {
-                        display: inline-block;
-                    }
-                </style>
-                <div class="text-xs-center">
-                <div class="g-recaptcha" required data-sitekey="6LfXqlMmAAAAAPwxl0ybw4QYiop7V9Z26VmLmbsZ"></div>
-                </div>
-                <input type="submit" value="Iniciar">
-                
-            </form>
-
-            <span class="text-footer">¿Aún no te has regsitrado?
-                <a href="./application/views/register.php">Registrate</a>
-            </span>
-
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  </script>
 </body>
 </html>
-
