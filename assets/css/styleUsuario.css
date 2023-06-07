@@ -1,0 +1,82 @@
+body {
+    background: linear-gradient(to right, #DAE8FC 25%, #FFF2CC 25%);
+    background-size: 100% 100%;
+    height: 100vh;
+    margin: 0;
+    margin-top: 10%;
+    margin-left: 0.8%;
+  }
+  .image-parkea {
+    position: absolute;
+      top: 0%;
+      left: 3.5%;
+    width: 15vw;
+    height: auto;
+  }
+  
+  .button1{
+    left: 0.8%;
+    margin-bottom: 10px;
+    border: none;
+    width: 23vw;
+    font-size: 1vw;
+      padding: 0.5vw;
+      border-radius: 10px;
+      background-color:#FE9F9F
+  }
+  .button2{
+    position: absolute;
+      top: 90%;
+      left: 0.8%;
+    border: none;
+    width: 23vw;
+    font-size: 1vw;
+      padding: 0.5vw;
+      border-radius: 10px;
+      background-color:#FE9F9F
+  }
+  #btn-abrir-popup{
+     position: absolute;
+    top: 870px;
+    left: 655px;
+  }
+  
+  #form_pe{
+    position: relative;
+    top: -350px; /* Desplazamiento vertical */
+    left: -150px; /* Desplazamiento horizontal */
+    width:400px;
+    padding:16px;
+    border-radius:10px;
+    margin:auto;
+    background-color:#FE9F9F;
+  }
+  
+  #map{    
+    position: absolute;
+    top: 100px;
+    left: 1150px;
+  }
+
+  #parSelec{
+    width: 250px; /* Define el ancho del select */
+    height: 30px; /* Define la altura del select */
+  }
+
+  #mm1, #ll1 {
+    width: 100px; /* Define el ancho del select */
+    height: 25px; /* Define la altura del select */
+    text-align: center;
+  }
+
+  .parInfo textarea {
+    width: 900; /* Ancho deseado */
+    height: 5; /* Altura deseada */
+  }
+  .bienvenido{
+    position: absolute;
+    top: 100px;
+    left: 3.5%;
+  }
+
+

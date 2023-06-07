@@ -1,0 +1,122 @@
+body {
+    background: linear-gradient(to right, #DAE8FC 25%, #FFF2CC 25%);
+    background-size: 100% 100%;
+    height: 100vh;
+    margin: 0;
+}
+.image-parkea {
+    position: absolute;
+      top: 0%;
+      left: 3.5%;
+    width: 15vw;
+    height: auto;
+  }
+  .button_container {
+    margin-top: 10%;
+    margin-left: 0.8%;
+  }
+  .button1{
+    left: 0.8%;
+    margin-bottom: 10px;
+    border: none;
+    width: 23vw;
+    font-size: 1vw;
+      padding: 0.5vw;
+      border-radius: 10px;
+      background-color:#FE9F9F
+  }
+  .button2{
+    position: absolute;
+      top: 90%;
+      left: 0.8%;
+    border: none;
+    width: 23vw;
+    font-size: 1vw;
+      padding: 0.5vw;
+      border-radius: 10px;
+      background-color:#FE9F9F
+  }
+  .table_location{
+    position: absolute;
+  top: 10vw; /* Cambia los valores según tus necesidades */
+  left: 32vw; /* Cambia los valores según tus necesidades */
+  width: 1200px;
+  }
+  #table-container {
+    display: none; /* Oculta la tabla por defecto */
+  }
+
+  .table-header {
+    background-color: #FFFF00;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #F8CECC;
+  }
+  
+  .table tbody tr:nth-child(odd) {
+    background-color: #DAE8FC;
+    
+  }
+  .column_1_size {
+    width: 2%;
+  }
+  
+  .column_2_size {
+    width: 26%;
+  }
+  
+  .column_3_size {
+    width: 4%;
+  }
+  .column_4_size {
+    width: 20%;
+  }
+  
+  .column_5_size {
+    width: 10%;
+  }
+  
+  .column_6_size {
+    width: 10%;
+  }
+  .column_7_size {
+    width: 10%;
+  }
+  
+  .column_8_size {
+    width: 6%;
+  }
+  .column_9_size {
+    width: 12%;
+  }
+
+  .column_1_size_usuario {
+    width: 6.5%;
+  }
+  
+  .column_2_size_usuario {
+    width: 24.5%;
+  }
+  
+  .column_3_size_usuario {
+    width: 24 .5%;
+  }
+  .column_4_size_usuario {
+    width: 6.5%;
+  }
+  
+  .column_5_size_usuario {
+    width: 6.5%;
+  }
+  
+  .column_6_size_usuario {
+    width: 12.5%;
+  }
+  .column_7_size_usuario {
+    width: 6.5%;
+  }
+  
+  .column_8_size_usuario {
+    width: 12.5%;
+  }
